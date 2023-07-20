@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:events_app_intern_task/models/event_model.dart';
 
 class DetailsScreenVenueCard extends StatelessWidget {
   const DetailsScreenVenueCard(
@@ -17,7 +16,6 @@ class DetailsScreenVenueCard extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
-              // color: const Color(0xffEEF0FF),
             ),
             padding: const EdgeInsets.all(9),
             child: const Icon(

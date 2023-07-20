@@ -11,19 +11,19 @@ String convertDateTimeofEventCard(String originalDateTimeString) {
 }
 
 String convertToFormattedDateForDetailsScreen(String originalDateTimeString) {
-    DateTime dateTime = DateTime.parse(originalDateTimeString);
-    String formattedDate = DateFormat('d MMMM, y').format(dateTime);
-    return formattedDate;
-  }
+  DateTime dateTime = DateTime.parse(originalDateTimeString);
+  String formattedDate = DateFormat('d MMMM, y').format(dateTime);
+  return formattedDate;
+}
 
-    String convertToFormattedDayForDetailsScreen(String originalDateTimeString) {
-    DateTime dateTime = DateTime.parse(originalDateTimeString);
-    String dayOfWeek = DateFormat('EEEE').format(dateTime);
-    String startTime = DateFormat('h:mm a').format(dateTime);
+String convertToFormattedDayForDetailsScreen(String originalDateTimeString) {
+  DateTime dateTime = DateTime.parse(originalDateTimeString);
+  String dayOfWeek = DateFormat('EEEE').format(dateTime);
+  String startTime = DateFormat('h:mm a').format(dateTime);
 
-    // Assuming the event duration is 5 hours from the start time
-    DateTime endTime = dateTime.add(Duration(hours: 5));
-    String endTimeStr = DateFormat('h:mm a').format(endTime);
+  // Assuming the event duration is 5 hours from the start time
+  DateTime endTime = dateTime.add(const Duration(hours: 5));
+  String endTimeStr = DateFormat('h:mm a').format(endTime);
 
-    return '$dayOfWeek, $startTime - $endTimeStr';
-  }
+  return '$dayOfWeek, $startTime - $endTimeStr';
+}

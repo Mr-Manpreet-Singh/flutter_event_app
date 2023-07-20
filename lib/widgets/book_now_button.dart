@@ -30,7 +30,6 @@ class BookNowButton extends StatelessWidget {
                     Icons.arrow_circle_right_outlined,
                     size: 30,
                         color: Colors.white
-                    // color:Color(0xFF3D55F0),
                     ,
                   ),
                 ]),

@@ -1,7 +1,7 @@
 import 'package:events_app_intern_task/models/event_model.dart';
-import 'package:events_app_intern_task/screens/events_screen.dart';
+
 import 'package:events_app_intern_task/utils/http_methods.dart';
-import 'package:events_app_intern_task/widgets/event_card.dart';
+
 import 'package:events_app_intern_task/widgets/event_list_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -14,7 +14,7 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  final bool _isSearching = false;
+
   final TextEditingController _searchController = TextEditingController();
   String _searchingValue = "";
 

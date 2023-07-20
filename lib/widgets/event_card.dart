@@ -43,7 +43,7 @@ class EventCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("${_dateTime}",
+                    Text(_dateTime,
                         style: const TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w400,

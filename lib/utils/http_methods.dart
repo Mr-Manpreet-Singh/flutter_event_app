@@ -1,4 +1,4 @@
-import 'package:events_app_intern_task/providers/all_events_provider.dart';
+
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
@@ -21,9 +21,9 @@ class HttpMethods {
 
       // Sending data to Provider
 
-      final AllEventsNotifier allEventsNotifier = AllEventsNotifier();
-      allEventsNotifier.addListOfEvents(allEvents);
-      debugPrint("getAllEvents api success + data sent to provider");
+      // final AllEventsNotifier allEventsNotifier = AllEventsNotifier();
+      // allEventsNotifier.addListOfEvents(allEvents);
+      // debugPrint("getAllEvents api success + data sent to provider");
       return allEvents;
     } else {
       throw Exception('Failed to load events');

@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:events_app_intern_task/models/event_model.dart';
 import 'package:events_app_intern_task/utils/http_methods.dart';
-import 'package:events_app_intern_task/widgets/event_card.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 
 class EventsScreen extends ConsumerStatefulWidget {
@@ -24,7 +24,7 @@ class _EventsScreenState extends ConsumerState<EventsScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
+   
     requestAllEventDetails();
     super.initState();
   }
@@ -33,7 +33,7 @@ class _EventsScreenState extends ConsumerState<EventsScreen> {
   Widget build(BuildContext context) {
     // debugPrint("provider Fetched Events count = ${allEvents.length}");
     return Scaffold(
-      // backgroundColor: Color(0xFFF5F5F5),
+     
       appBar: AppBar(
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,

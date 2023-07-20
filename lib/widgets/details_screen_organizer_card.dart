@@ -17,7 +17,7 @@ class OrganizerCard extends StatelessWidget {
                   shape: BoxShape.circle,
                   image: DecorationImage(
                     image: NetworkImage(
-                        event.organiserIcon), // Replace with your image asset path
+                        event.organiserIcon), 
                     fit: BoxFit.cover,
                   ))),
           const SizedBox(width: 8),

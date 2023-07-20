@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'package:events_app_intern_task/screens/event_details_screen.dart';
-import 'package:events_app_intern_task/screens/events_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:events_app_intern_task/screens/events_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -11,7 +10,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
